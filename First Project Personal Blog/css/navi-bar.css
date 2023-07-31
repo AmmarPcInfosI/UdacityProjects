@@ -1,0 +1,30 @@
+/*navigaion section*/
+
+.navbar {
+  text-decoration: none;
+  padding-bottom: 2.1em;
+  padding-top: 1.01em;
+}
+
+.navbar a {
+  color: black;
+  float: left;
+  text-align: center;
+  padding-right: 1.01em;
+  text-decoration: none;
+  font-size: 1.26em;
+  padding-right: 1.01em;
+}
+
+.navbar a:hover {
+  color:rgb(0, 132, 255);
+}
+
+.navbar > #right {
+  float: right;
+  text-align: center;
+  padding-right: 0em;
+  padding-left: 1.1em;
+  text-decoration: none;
+  font-size: 1.26em;
+}
