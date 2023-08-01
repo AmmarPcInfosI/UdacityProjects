@@ -8,27 +8,26 @@ This repository contains three projects completed during my Front End Web Develo
 
 ### 1. Personal Blog
 
-![Personal Blog](personal_blog_screenshot.png)
 
 In this project, I created a personal blog website using HTML, CSS, and a touch of JavaScript. The blog features multiple pages with engaging content and a clean and responsive design. It demonstrates my ability to structure a web page, style it effectively, and incorporate some interactive elements.
 
-[**View Project**](personal_blog/)
+
 
 ### 2. Landing Page
 
-![Landing Page](landing_page_screenshot.png)
+
 
 The Landing Page project involved building a multi-section landing page with a navigation menu dynamically created using JavaScript. This project showcases my understanding of DOM manipulation and smooth scrolling techniques. The landing page is fully responsive and optimized for various devices.
 
-[**View Project**](landing_page/)
+
 
 ### 3. Weather Journal Web App
 
-![Weather Journal Web App](weather_journal_screenshot.png)
+
 
 The Weather Journal Web App is a dynamic web application built with HTML, CSS, and JavaScript. It allows users to enter their current location and feelings and fetches real-time weather data using the OpenWeatherMap API. The app then displays the weather information along with the user's feelings.
 
-[**View Project**](weather_journal_web_app/)
+
 
 ## About the Author
 
