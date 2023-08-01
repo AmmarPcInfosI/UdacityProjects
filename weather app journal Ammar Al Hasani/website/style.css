@@ -1,0 +1,308 @@
+/* Base styles for the entire page */
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+/* Container for the main app content */
+#app {
+  display: grid;
+  grid-template-rows: max-content max-content max-content minmax(150px, 185px);
+  height: calc(100vh - 16px);
+  color: white;
+  justify-content: center;
+  grid-gap: 1em;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Basic styling for HTML and body elements */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for individual entries */
+.entry {
+  background: #f7f7f7;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+/* Headline styling */
+.headline {
+  text-align: center;
+  color: white;
+}
+
+/* Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 18px;
+  color: white;
+}
+
+/* Background styling and image for the body */
+body {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
+  /* Background image settings */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("./img/pexels-kaique-rocha-125510.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Container for user input form */
+.container {
+  max-width: 90%;
+}
+
+/* General styling for input elements */
+input {
+  display: block;
+  height: 45px;
+  width: 320px;
+  max-width: 100%;
+  background: #eaeaea;
+  color: #333333;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* General styling for buttons */
+button {
+  width: 400px;
+  max-width: 100%;
+  height: 50px;
+  background: #4CAF50;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+
+/* Improve button interaction styles */
+button:focus,
+button:hover {
+  background: #45a049;
+}
+
+/* Styling for headlines */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* General styling for textareas */
+textarea {
+  background: #eaeaea;
+  color: #333333;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+/* Improve input and textarea interaction styles */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Placeholder text styling */
+::placeholder {
+  color: #aaaaaa;
+}
+
+:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+::-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+/* Update button text color on hover */
+button:hover {
+  color: #ffffff;
+}
+
+/* Container for each entry */
+.holderEntry {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333333;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  opacity: 0.1;
+  background-color: #f1f1f1;
+}
+
+/* Styling for city and weather information in each entry */
+#entryHolder {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  opacity: 0.1;
+  background-color: #f1f1f1;
+}
+
+/* Styling for the form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the result container */
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Styling for error message */
+#message {
+  color: #f23557;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small screens up to 480px (Phones) */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* Medium-sized screens up to 768px (Tablets) */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  input,
+  button,
+  textarea {
+    width: 80%;
+  }
+}
+
+/* Large-sized screens up to 1024px (Laptops) */
+@media screen and (max-width: 1024px) {
+  #app {
+    grid-template-rows: max-content max-content minmax(150px, 185px);
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  input,
+  button,
+  textarea {
+    width: 100%;
+  }
+}
+
+/* Extra-large screens (Large screens) */
+@media screen and (min-width: 1025px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  input,
+  button,
+  textarea {
+    width: 100%;
+  }
+}
+
+img{
+  width: 25%;
+  height:25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  max-width: 100%;
+  max-height: 100%;
+}
+.holderEntry{
+  padding-top: 1.5rem;
+  margin-top: 35px;
+  opacity: 0;
+  transition: opacity 1.5s linear;
+  
+  img{
+      width: 25%;
+      height:25%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+      max-width: 100%;
+      max-height: 100%;
+  }
+  #entryHolder{
+      background-color: inherit;
+      -webkit-backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
+      font-size:1.4rem;
+      color:  rgba(0, 0, 0,0.3);
+      padding: 3rem;
+      border-radius: 10px;
+      border: 1px solid white;
+      box-shadow: 0 0 10px 0px rgba(0, 0, 0,0.3);
+      #date{
+          display: none;
+          opacity: 0;
+          transition: opacity 2.5s ease-in-out;        }
+      
+  
+      
+  }
+}
+#date,
+#city,
+#temp,
+#description{
+  text-align: center;
+}
